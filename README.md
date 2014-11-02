@@ -6,3 +6,5 @@
 * Some screens not showing
 * Testimonials not working
 * Social icons not showing 
+* Contact form 
+* video 
