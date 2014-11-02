@@ -1,10 +1,12 @@
 ## Green Beats Project
 
-# To fix
-* Montreal background image 
+# To fix 
 * Need to fix some icons
 * Some screens not showing
-* Testimonials not working
-* Social icons not showing 
-* Contact form 
-* video 
+* Update Contact form 
+* Upload video somewhere 
+
+# If time allows...
+* Hover over Social Media Icons
+* Set up social media accounts
+* Delete uncessary files/comments
