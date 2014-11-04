@@ -1,10 +1,10 @@
 ## Green Beats Project
 
 # To fix 
-* Need to fix some icons
-* Some screens not showing
-* Update Contact form 
+* Fix font-awesome icons
+* Change logos
 * Upload video somewhere 
+* Update Contact form 
 
 # If time allows...
 * Hover over Social Media Icons
