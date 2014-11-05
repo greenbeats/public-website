@@ -1,11 +1,14 @@
-## Green Beats Project
+# Green Beats Project
 
-# To fix 
-* favicon doesn't update
+## To fix 
 * Upload video somewhere 
+* Update menu nav
 * Update Contact form 
+* Replace lorem ipsum with actual text
 
-# If time allows...
+## If time allows...
+* Made logo prettier
+* Mailchimp integration
 * Hover over Social Media Icons
 * Set up social media accounts
 * Delete uncessary files/comments
