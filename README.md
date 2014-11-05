@@ -1,8 +1,7 @@
 ## Green Beats Project
 
 # To fix 
-* Fix font-awesome icons
-* Change logos
+* favicon doesn't update
 * Upload video somewhere 
 * Update Contact form 
 
