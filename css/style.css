@@ -636,7 +636,6 @@ hr.white {
 }
 .download p {
   color: #ffffff;
-  font-weight: bold;
 }
 .download .button-group {
   margin-top: 4rem;
@@ -673,7 +672,7 @@ hr.white {
 }
 .contact-us .expendable-contact-btn .fa {
   color: #8d8d8d;
-  font-size: 30px;
+  font-size: 35px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -681,7 +680,7 @@ hr.white {
   border-radius: 40px;
   height: 80px;
   width: 80px;
-  line-height: 90px;
+  line-height: 80px;
   background: #fff;
   transition: all 0.2s;
 }
