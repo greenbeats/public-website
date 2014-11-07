@@ -1,6 +1,7 @@
 # Green Beats Project
 
 ## To fix 
+* Flip image horizontally in "Simple and Effective" section
 * Upload video somewhere 
 * Update menu nav
 * Update Contact form 
