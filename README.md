@@ -1,10 +1,10 @@
-# Green Beats Project
+# Green Beats Website
 
 ## To fix 
 * Flip image horizontally in "Simple and Effective" section
 * Upload video somewhere 
 * Update menu nav
-* Update Contact form 
+* Contact form action
 * Replace lorem ipsum with actual text
 
 ## If time allows...
