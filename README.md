@@ -10,6 +10,4 @@
 ## If time allows...
 * Made logo prettier
 * Mailchimp integration
-* Hover over Social Media Icons
-* Set up social media accounts
 * Delete uncessary files/comments
