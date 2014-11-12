@@ -1,21 +1,20 @@
-// This script connects to the Go server 
 
-function playvideo()
+var url = "http://54.69.71.254:8080/timeStamp/";
+
+// http request function 
+function httpGet()
 {
-	var video = document.getElementById("gbvideo");
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", url, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 };
 
 
-// Request a connection to Go server
-
-func handler(w http.ResponseWriter, r *http.Request) {
-    conn, err := upgrader.Upgrade(w, r, nil)
-    if err != nil {
-        log.Println(err)
-        return
-    }
-    ... Use conn to send and receive messages.
-}
-
-
-// Get response. 
+function playVideo()
+{
+	print 'hello'; 
+	
+};
