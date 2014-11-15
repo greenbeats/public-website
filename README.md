@@ -1,9 +1,13 @@
 # Green Beats Website
 
-## To fix 
+## Functionality
+* Website is located ``ubuntu/greenBeatsGo/src``
+* Make http request work
+* String conversion into nanoseconds
+
+
+## To fix later
 * Flip image horizontally in "Simple and Effective" section
-* Upload video somewhere 
-* Update menu nav
 * Contact form action
 * Replace lorem ipsum with actual text
 
