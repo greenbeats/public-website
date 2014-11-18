@@ -383,8 +383,11 @@
                 <p>Follow the instructions in the video</p>  
             </div>
             
-            <video id="gbvideo" width="960" height="540" src="video/part.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
+            <video width="960" height="540" autoplay loop>
+                <source src="videos/part.mp4" type="video/mp4">
+                <source src="videos/part.webm" type="video/webm">
+                <source src="videos/part.ogv" type="video/ogg">
+            <p>Your browser does not support HTML5 video.</p>
             </video>
             <!--<video id="video_background" preload="auto" autoplay="autoplay" loop="loop" muted="muted" style="position: fixed; top: -267px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 1315px; height: 739.6875px;"><source src="video/video.mp4" type="video/mp4"><source src="video/video.ogv" type="video/ogv"><source src="video/video.pm4" type="video/webm">bgvideo</video>
             -->
