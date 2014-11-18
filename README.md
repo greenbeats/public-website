@@ -1,13 +1,13 @@
 # Green Beats Website
 
 ## Functionality
-* Website is located ``ubuntu/greenBeatsGo/src``
+* Fix video playing
 * Make http request work
 * String conversion into nanoseconds
+* Upload everything to the server
 
 
 ## To fix later
-* Flip image horizontally in "Simple and Effective" section
 * Contact form action
 * Replace lorem ipsum with actual text
 
