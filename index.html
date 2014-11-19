@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-    <!-- TITLE OF SITE -->
     <title>Green Beats</title>
-
     <meta name="description" content="Let us synchronize our hearts with millions of others by breathing all at once; together in sync we will raise the planet’s vibratory frequency" />
     <meta name="keywords" content="Green Beats,breathing, hearts, frequency, planet, synchronize" />
-    <meta name="author" content="Martin, George, Santiago">
+    <meta name="author" content="Silent Disco Squad">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- =========================
@@ -383,6 +380,16 @@
                 <p>Follow the instructions in the video</p>  
             </div>
             
+            <script type="text/javascript">
+                var xml_http = null;
+                var url = "http://54.69.71.254:8080/timeStamp/";
+
+                xml_http = new XMLHttpRequest();
+                xml_http.open( "GET", url, false );
+                xml_http.send( null );
+                console.log(xml_http.responseText);
+                //return xml_http.responseText;
+            </script>
             <video width="960" height="540" autoplay loop>
                 <source src="videos/part.mp4" type="video/mp4">
                 <source src="videos/part.webm" type="video/webm">

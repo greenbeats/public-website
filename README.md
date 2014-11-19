@@ -12,6 +12,5 @@
 * Replace lorem ipsum with actual text
 
 ## If time allows...
-* Made logo prettier
 * Mailchimp integration
 * Delete uncessary files/comments

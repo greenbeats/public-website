@@ -4,12 +4,14 @@ var url = "http://54.69.71.254:8080/timeStamp/";
 // http request function 
 function httpGet()
 {
-    var xmlHttp = null;
+    var xml_http = null;
 
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false );
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+    xml_http = new XMLHttpRequest();
+    xml_http.open( "GET", url, false );
+    xml_http.send( null );
+    console.log(xml_http.responseText);
+    return xml_http.responseText;
+
 };
 
 
