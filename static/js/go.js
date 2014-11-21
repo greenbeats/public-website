@@ -1,3 +1,10 @@
+function main(){
+
+	var time = getSeconds();
+	var latency = getLatency();
+	setPlayTime(time);
+
+}
 
 function getHttp(){
 
@@ -24,11 +31,30 @@ function getSeconds(){
 };
 
 
+function setPlayTime(time){
+
+	var vid = document.getElementById("gbvideo");
+	console.log(time);
+	vid.currentTime = time; 
+
+};
+
 // TODO
          
-function getLatency()
-{
-	return null;
+function getLatency(){
+	
+	
+	var start = new Date().getTime();
+
+	for(var i=0; i<3; i++){
+
+		getSeconds();
+
+	}
+	var end = new Date().getTime();
+	var latency = (end - start)/3;
+
+
 };
 
 // TODO
@@ -39,4 +65,4 @@ function hearbeat()
 };
 
 
-window.onload = getSeconds;
+window.onload = main;

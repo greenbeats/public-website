@@ -1,7 +1,7 @@
 # Green Beats Website
 
 ## Functionality
-* Fix video playing
+* Convert video other formats
 * Make http request work
 * String conversion into nanoseconds
 * Upload everything to the server
