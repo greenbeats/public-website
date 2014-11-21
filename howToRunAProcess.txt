@@ -1,0 +1,3 @@
+./gb&
+bg %1
+disown -h %1

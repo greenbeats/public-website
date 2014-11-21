@@ -1,0 +1,141 @@
+/*
+|----------------------------------------------------------------------------
+| VARIABLES
+|----------------------------------------------------------------------------
+*/
+/*
+|----------------------------------------------------------------------------
+| MIXINS
+|----------------------------------------------------------------------------
+*/
+/*
+|----------------------------------------------------------------------------
+| COLOR REPLACEMENT
+|----------------------------------------------------------------------------
+*/
+/* MISCELLANEOUS STYLE */
+.color-overlay {
+  background: -webkit-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -moz-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -ms-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -o-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+}
+hr.separator {
+  border-top: 2px solid #2aa09b;
+}
+/* OWL THEME BULLETS */
+.owl-theme .owl-controls .owl-buttons div {
+  background: #2aa09b;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #2aa09b;
+}
+.owl-theme .owl-controls .owl-page.active span {
+  background: #2aa09b;
+}
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #2aa09b;
+}
+/* BUTTONS */
+.btn-main {
+  background: #1a6360;
+}
+.btn-main:hover {
+  background: #154f4d;
+}
+.btn-learn {
+  background: #fff;
+  color: #154f4d;
+  border: 2px solid #fff;
+}
+.btn-learn:hover {
+  color: #fff;
+  background: #154f4d;
+}
+.btn-download {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-download:hover {
+  background: #fff;
+  color: #154f4d;
+}
+/* PRELOADER */
+.spinner-wrapper {
+  background: #2aa09b;
+}
+/* MAIN NAVIGATION BAR */
+.sticky-navbar .main-navigation li a:hover {
+  color: #2aa09b;
+}
+.sticky-navbar .main-navigation li.current a {
+  color: #2aa09b;
+}
+/* WAY WE WORK */
+.way-we-work .features .each-item:hover .fa {
+  background: #2aa09b;
+  border: 1px solid #2aa09b;
+}
+.way-we-work .features .each-item:hover h4 {
+  color: #2aa09b;
+}
+/* APP INTRO */
+.app-intro {
+  background: -webkit-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -moz-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -ms-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -o-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+}
+/* EASY FEATURES AVAILABLE */
+.easy-features-available .each-easy-step h5.text-colored {
+  color: #2aa09b;
+}
+/* TESTIMONIALS */
+.testimonials figure img {
+  border: 1px solid #154f4d;
+}
+.testimonials figure figcaption {
+  color: #154f4d;
+}
+/* PRICING TABLE */
+.pricing-table .table-single.table-active .meta-title {
+  background: #2aa09b;
+  color: #fff;
+}
+/* OUR OTHER APPS */
+.our-other-apps .app-description .line-btn {
+  border: 2px solid #2aa09b;
+  color: #2aa09b;
+}
+/* CONTACT US SECTION */
+.download .color-overlay {
+  background: -webkit-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -moz-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -ms-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: -o-linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+  background: linear-gradient(left, rgba(42, 160, 155, 0.9) 10%, rgba(214, 164, 164, 0.9) 90%);
+}
+/* CONTACT US SECTION */
+.contact-us .expendable-contact-btn .fa {
+  border: 2px solid #2aa09b;
+}
+.contact-us .expendable-contact-btn .fa:hover {
+  background: #2aa09b;
+}
+.contact-us .about-us .each-item .ef {
+  border: 1px solid #2aa09b;
+  color: #2aa09b;
+}
+.contact-us .about-us .each-item address p a:hover {
+  color: #2aa09b;
+}
+.contact-us .contact-form .form-control {
+  border: 1px solid #2aa09b;
+}
+/* FOOTER SECTION */
+.footer .social-icons ul li a:hover,
+.footer .copyright ul li a:hover {
+  color: #2aa09b;
+}
