@@ -1,22 +1,30 @@
+$(document).ready(function(){
 
-var url = "http://54.69.71.254:8080/timeStamp/";
+	function getHttp(){
+		var xml_http = null;
+		var url = "http://54.69.71.254:8080/timestamp/";
 
-// http request function 
-function httpGet()
+		xml_http = new XMLHttpRequest();
+		xml_http.open( "GET", url, false );
+		xml_http.send( null );
+		
+		return json = JSON.parse(JSON.parse(xml_http.responseText));
+	};
+
+
+function getSeconds(json){
+
+  console.log(json);
+};
+         
+function getLatency()
 {
-    var xml_http = null;
-    
-    xml_http = new XMLHttpRequest();
-    xml_http.open( "GET", url, false );
-    xml_http.send( null );
-    console.log(xml_http.responseText);
-    return xml_http.responseText;
-
+	return null;
 };
 
-
-function parseString(json)
+function hearbeat()
 {
-	print 'hello'; 
-	
+	return null; 
 };
+
+});

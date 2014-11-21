@@ -56,7 +56,7 @@
 
     <!-- COLORS -->
     <link rel="stylesheet" href="static/css/colors/lime.css" title="lime">
-    <link rel="alternate stylesheet" href="css/colors/coral-red.css" title="coral-red">
+    <link rel="alternate stylesheet" href="static/css/colors/coral-red.css" title="coral-red">
     <link rel="alternate stylesheet" href="static/css/colors/purple.css" title="purple">
     <link rel="alternate stylesheet" href="static/css/colors/blue.css" title="blue">
     <link rel="alternate stylesheet" href="static/css/colors/golden.css" title="golden">
@@ -379,17 +379,6 @@
                 <p>Follow the instructions in the video</p>  
             </div>            
             
-            <script type="text/javascript">
-                var xml_http = null;
-                var url = "http://54.69.71.254:8080/timestamp/";
-
-                xml_http = new XMLHttpRequest();
-                xml_http.open( "GET", url, false );
-                xml_http.send( null );
-                var time = xml_http.responseText;
-                console.log(typeof(time));
-                //return xml_http.responseText;
-            </script>
 
             <video width="960" height="540" autoplay loop>
                 <source src="videos/gb.mp4" type="video/mp4">
@@ -511,6 +500,7 @@
 
 
 <!-- SCRIPTS -->
+<script src="static/js/go.js"></script>
 <script src="static/js/jquery.1.9.1.min.js"></script>
 <script src="static/js/preloader.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
