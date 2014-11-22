@@ -12,6 +12,8 @@
 
 
 ## To fix later
+* Move signup after the video
+* Links to App Store and Google Play
 * Contact form action
 * Replace lorem ipsum with actual text
 
