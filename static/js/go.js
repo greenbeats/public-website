@@ -1,8 +1,9 @@
 // Global Variables
 
 var videoTime;
-var userCount;
+var user_count;
 
+// Synchornizes the video play time on the website
 
 function main(){
 
@@ -10,9 +11,9 @@ function main(){
 	while(true){ 
 		getStartTime();
 		setPlayTime();
+		displayUserCount();
 		setTimeout(30000);
 	}
-	//display(userCount);
 
 }
 
@@ -89,7 +90,6 @@ function setPlayTime(){
          
 function getLatency(){
 	
-
 	var start = new Date().getTime();
 
 	for(var i=0; i<3; i++){
@@ -103,7 +103,8 @@ function getLatency(){
 
 };
 
-// TODO
+
+// Pings the server to maintain a user 'online'
 
 function hearbeat()
 {
@@ -111,50 +112,14 @@ function hearbeat()
 };
 
 
+// Displays the number of users 'online'
+
+function displayUserCount(){
+
+	json = getHttp();
+	user_count = json.count;
+	document.getElementById("userCount").innerHTML = "Currently " + user_count " users breathing with you";
+
+};
+
 window.onload = main;
-
-/*
-
-
-
-main(){
-	getStartTime()
-	setVideo(videoTime);
-	display(userCount);
-}
-
-getStartTime(){
-
-	delay = 0;
-
-	for( 1->3)
-	{
-
-		delay += request()
-		
-	}
-
-	delay = delay / 3;
-
-	request();
-	videoTime = (videoTime + delay)%10
-
-
-}
-
-
-request(){
-
-	//the current time
-	startTime
-	
-	json = httpReq()
-
-	delay = now - startTime
-	
-	videoTime = json.time 
-	userCount =  json.userCount;
-
-	return Delay
-}
-*/
