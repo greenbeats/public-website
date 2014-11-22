@@ -1,13 +1,19 @@
-// Global Variables
+///////////////////////////////////////////////////
+//
+// Go Server Syncronizer Library
+// Version = 1.0
+//
+///////////////////////////////////////////////////
 
-var videoTime;
+var video_time;
 var user_count;
+
 
 // Synchornizes the video play time on the website
 
 function main(){
 
-	videoTime = 0;
+	video_time = 0;
 	while(true){ 
 		getStartTime();
 		setPlayTime();
@@ -16,6 +22,9 @@ function main(){
 	}
 
 }
+
+
+// add text
 
 function getStartTime(){
 
@@ -30,7 +39,7 @@ function getStartTime(){
 	delay = delay / 3;
 	Request();
 
-	videoTime = (videoTime + delay) % 10000; 
+	video_time = (video_time + delay) % 10000; 
 
 };
 
@@ -46,7 +55,7 @@ function Request(){
 
 	var delay = now - startTime;
 	
-	var videoTime = json.time; 
+	var video_time = json.time; 
 	var userCount = json.count;
 
 	return delay;
@@ -56,33 +65,37 @@ function Request(){
 function getHttp(){
 
 		var xml_http = null;
-		var url = "http://54.69.71.254:8080/timestamp/";
+		var server_url = "http://54.69.71.254:8080/timestamp/";
 
 		xml_http = new XMLHttpRequest();
-		xml_http.open( "GET", url, false );
+		xml_http.open( "GET", server_url, false );
 		xml_http.send( null );
 		
 		return JSON.parse(xml_http.responseText);
 		
 };
 
+
+// Calculates video play time form server
+
 function getSeconds(){
 
 	json = getHttp(); 
 	var time = json.time; 
 	var seconds = time.toFixed(2) / 1000000000
-
-  console.log(seconds % 10)  
+  
   return (seconds % 10);
 
 };
 
 
+// Sets the play time for the video
+
 function setPlayTime(){
 
 	var vid = document.getElementById("gbvideo");
-	console.log(videoTime);
-	vid.currentTime = videoTime; 
+	console.log(video_time);
+	vid.currentTime = video_time; 
 
 };
 
@@ -106,7 +119,7 @@ function getLatency(){
 
 // Pings the server to maintain a user 'online'
 
-function hearbeat()
+function heartbeat()
 {
 	return null; 
 };
