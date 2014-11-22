@@ -1,10 +1,14 @@
 # Green Beats Website
 
 ## Functionality
-* Convert video other formats
-* Make http request work
-* String conversion into nanoseconds
-* Upload everything to the server
+* Upload video to the server, test if it works
+* Fix getStartTime method
+* Fix setPlayTime method
+* Fix latency method
+* Heartbeat method
+* Display User Count below the video
+* Test if video scyncronizes properly
+
 
 
 ## To fix later

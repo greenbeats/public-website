@@ -9,7 +9,7 @@ var video_time;
 var user_count;
 
 
-// Synchornizes the video play time on the website
+// Synchornizes the video every 30 seconds
 
 function main(){
 
@@ -18,7 +18,7 @@ function main(){
 		getStartTime();
 		setPlayTime();
 		displayUserCount();
-		setTimeout(30000);
+		setTimeout(30000); // Calls back in 30 seconds
 	}
 
 }
@@ -28,18 +28,16 @@ function main(){
 
 function getStartTime(){
 
-	var delay = 0;
+	var time_delay = 0;
 
 	for(var i=0; i<3; i++){
-
-		delay += Request();
-
+		time_delay += Request();
 	}
 
-	delay = delay / 3;
+	time_delay = time_delay / 3;
 	Request();
 
-	video_time = (video_time + delay) % 10000; 
+	video_time = (video_time + time_delay) % 10000; 
 
 };
 
@@ -61,6 +59,8 @@ function Request(){
 	return delay;
 
 };
+
+// Returns JSON data (timestamp and usercount) from server
 
 function getHttp(){
 
@@ -94,7 +94,6 @@ function getSeconds(){
 function setPlayTime(){
 
 	var vid = document.getElementById("gbvideo");
-	console.log(video_time);
 	vid.currentTime = video_time; 
 
 };
