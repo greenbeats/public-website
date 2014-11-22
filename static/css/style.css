@@ -621,7 +621,6 @@ hr.white {
 /* DOWNLOAD */
 /***************************************************************************/
 .download {
-  background: url("../images/download-bg.jpg") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

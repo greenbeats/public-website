@@ -14,12 +14,12 @@ var user_count;
 function main(){
 
 	video_time = 0;
-	while(true){ 
+	//while(true){ 
 		getStartTime();
 		setPlayTime();
 		displayUserCount();
-		setTimeout(30000); // Calls back in 30 seconds
-	}
+		//setTimeout(30000); // Calls back in 30 seconds
+	//}
 
 }
 
@@ -37,7 +37,8 @@ function getStartTime(){
 	time_delay = time_delay / 3;
 	Request();
 
-	video_time = (video_time + time_delay) % 10000; 
+	video_time = (video_time + time_delay) % 100000; 
+	console.log(video_time);
 
 };
 
@@ -130,7 +131,7 @@ function displayUserCount(){
 
 	json = getHttp();
 	user_count = json.count;
-	document.getElementById("userCount").innerHTML = "Currently " + user_count " users breathing with you";
+	document.getElementById("userCount").innerHTML = "Currently " + user_count + " users breathing with you";
 
 };
 
