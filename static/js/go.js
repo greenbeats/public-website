@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////
 //
-// Go Server Syncronizer Library
+// Go Server Syncronizer
 // Version = 1.0
 //
 ///////////////////////////////////////////////////
@@ -15,16 +15,16 @@ function main(){
 
 	video_time = 0;
 	//while(true){ 
-		getStartTime();
-		setPlayTime();
-		displayUserCount();
-		//setTimeout(30000); // Calls back in 30 seconds
+	getStartTime();
+	setPlayTime();
+	displayUserCount();
+	//setTimeout(30000); // Calls back in 30 seconds
 	//}
 
 }
 
 
-// add text
+// Calculates the start time of video accounting for delay
 
 function getStartTime(){
 
@@ -37,25 +37,20 @@ function getStartTime(){
 	time_delay = time_delay / 3;
 	Request();
 
-	video_time = (video_time + time_delay) % 100000; 
-	console.log(video_time);
+	video_time = (video_time + time_delay) % 10; 
 
 };
 
 
 function Request(){
 
-	//the current time
-	var startTime = new Date().getTime();
-
+	var start_time = new Date().getTime();
 	json = getHttp(); 
+	var end_time = new Date().getTime(); 
 
-	var now = new Date().getTime(); 
-
-	var delay = now - startTime;
-	
+	var delay = end_time - start_time;
 	var video_time = json.time; 
-	var userCount = json.count;
+	user_count = json.count;
 
 	return delay;
 
