@@ -64,26 +64,22 @@ function setPlayTime(){
 
 	var vid = document.getElementById("gbvideo");
 	vid.play();
-	vid.addEventListener("canplay",function(){
-		 vid.currentTime = video_time;
-		 });
+	vid.currentTime = video_time;
 	//vid.currentTime = video_time; 
-	console.log(video_time);
-	console.log(user_count);
 };
 
 // Returns JSON data (timestamp and usercount) from server
 
 function getHttp(){
 
-		var xml_http = null;
-		var server_url = "http://54.69.71.254:8080/timestamp/";
+	var xml_http = null;
+	var server_url = "http://54.69.71.254:8080/timestamp/";
 
-		xml_http = new XMLHttpRequest();
-		xml_http.open( "GET", server_url, false );
-		xml_http.send( null );
-		
-		return JSON.parse(xml_http.responseText);
+	xml_http = new XMLHttpRequest();
+	xml_http.open( "GET", server_url, false );
+	xml_http.send( null );
+	
+	return JSON.parse(xml_http.responseText);
 		
 };
 

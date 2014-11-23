@@ -1,15 +1,12 @@
 # Green Beats Website
 
 ## Functionality
-* Upload video to the server, test if it works
 * Fix getStartTime method
 * Fix setPlayTime method
 * Fix latency method
 * Heartbeat method
 * Display User Count below the video
 * Test if video scyncronizes properly
-
-
 
 ## To fix later
 * Move signup after the video
