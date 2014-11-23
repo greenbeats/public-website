@@ -8,21 +8,21 @@
 var video_time;
 var user_count;
 
-
+window.onload = main;
 // Synchornizes the video every 30 seconds
 
 function main(){
 
 	video_time = 0;
-	//while(true){ 
-	getStartTime();
-	setPlayTime();
-	//displayUserCount();
-	//setTimeout(30000); // Calls back in 30 seconds
-	//}
-
+	heartbeat();
+	setInterval(function(){heartbeat()}, 30000); // Calls back in 30 seconds
 }
 
+function heartbeat(){
+	getStartTime();
+	setPlayTime();
+	displayUserCount();
+};
 
 // Calculates the start time of video accounting for delay
 
@@ -33,12 +33,12 @@ function getStartTime(){
 	for(var i=0; i<3; i++){
 		time_delay += Request();
 	}
-
 	time_delay = time_delay / 3;
-	Request(); // Why do we need this request again?
-
+	console.log("video_time="+video_time);
 	video_time = (video_time + time_delay) % 10; 
+		console.log("video_time="+video_time);
 
+	console.log(video_time);
 };
 
 // Returns delay time from server
@@ -50,7 +50,7 @@ function Request(){
 	var end_time = new Date().getTime(); 
 
 	var delay = end_time - start_time;
-	var video_time = json.time; 
+	video_time = json.time/1000000000; 
 	user_count = json.count;
 
 	return delay;
@@ -62,9 +62,9 @@ function Request(){
 
 function setPlayTime(){
 
-	document.getElementById('gbvideo').addEventListener('loadedmetadata', function() {
-  	this.currentTime = video_time;
-	}, false);
+	var vid = document.getElementById("gbvideo");
+	vid.play();
+	vid.currentTime = video_time;
 };
 
 // Returns JSON data (timestamp and usercount) from server
@@ -93,34 +93,6 @@ function getSeconds(){
   
   return (seconds % 10);
 
-};
-
-
-
-
-// TODO
-         
-function getLatency(){
-	
-	var start = new Date().getTime();
-
-	for(var i=0; i<3; i++){
-
-		getSeconds();
-
-	}
-	var end = new Date().getTime();
-	var latency = (end - start)/3;
-
-
-};
-
-
-// Pings the server to maintain a user 'online'
-
-function heartbeat()
-{
-	return null; 
 };
 
 
