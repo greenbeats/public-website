@@ -35,12 +35,13 @@ function getStartTime(){
 	}
 
 	time_delay = time_delay / 3;
-	Request();
+	Request(); // Why do we need this request again?
 
 	video_time = (video_time + time_delay) % 10; 
 
 };
 
+// Returns delay time from server
 
 function Request(){
 
@@ -54,6 +55,21 @@ function Request(){
 
 	return delay;
 
+};
+
+
+// Sets the play time for the video
+
+function setPlayTime(){
+
+	var vid = document.getElementById("gbvideo");
+	vid.play();
+	vid.addEventListener("canplay",function(){
+		 vid.currentTime = video_time;
+		 });
+	//vid.currentTime = video_time; 
+	console.log(video_time);
+	console.log(user_count);
 };
 
 // Returns JSON data (timestamp and usercount) from server
@@ -85,14 +101,7 @@ function getSeconds(){
 };
 
 
-// Sets the play time for the video
 
-function setPlayTime(){
-
-	var vid = document.getElementById("gbvideo");
-	vid.currentTime = video_time; 
-
-};
 
 // TODO
          
@@ -126,7 +135,7 @@ function displayUserCount(){
 
 	json = getHttp();
 	user_count = json.count;
-	document.getElementById("userCount").innerHTML = "Currently " + user_count + " users breathing with you";
+	document.getElementById("userCount").innerHTML = "Currently " + user_count + " users breathing";
 
 };
 
