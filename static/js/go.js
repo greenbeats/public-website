@@ -14,12 +14,12 @@ var user_count;
 function main(){
 
 	video_time = 0;
-	while(true){ 
+	//while(true){ 
 	getStartTime();
 	setPlayTime();
 	displayUserCount();
-	setTimeout(30000); // Calls back in 30 seconds
-	}
+	//setTimeout(30000); // Calls back in 30 seconds
+	//}
 
 }
 
