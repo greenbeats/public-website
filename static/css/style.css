@@ -369,11 +369,15 @@ hr.white {
   -o-background-size: cover;
   background-size: cover;
   background: #f3f5f8;
+<<<<<<< HEAD
   padding: 5.5rem 0 4.5rem;
 }
 .subscribe-newsletter .color-overlay {
+=======
+>>>>>>> fe8df55d2af3a21f5df117a65f83349cfb68d192
   padding: 5.5rem 0 4.5rem;
 }
+
 .subscribe-newsletter .fa {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -623,7 +627,6 @@ hr.white {
 /* DOWNLOAD */
 /***************************************************************************/
 .download {
-  background: url("../images/download-bg.jpg") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
