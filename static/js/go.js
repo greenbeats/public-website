@@ -65,7 +65,7 @@ function setPlayTime(){
 	var vid = document.getElementById("gbvideo");
 	vid.currentTime = video_time; 
 	console.log(video_time);
-
+	console.log(user_count);
 };
 
 // Returns JSON data (timestamp and usercount) from server
