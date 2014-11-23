@@ -368,7 +368,8 @@ hr.white {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #ffffff;
+  background: #f3f5f8;
+  padding: 5.5rem 0 4.5rem;
 }
 .subscribe-newsletter .color-overlay {
   padding: 5.5rem 0 4.5rem;

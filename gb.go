@@ -8,9 +8,7 @@ import (
   "gopkg.in/mgo.v2"
   "gopkg.in/mgo.v2/bson"
   "os"
-  "encoding/json"
 )
-
 type ipStruct struct {
  ID        bson.ObjectId `bson:"_id,omitempty"`
  IP        string `bson:"ip"`
@@ -18,9 +16,8 @@ type ipStruct struct {
 }
 
 func stamper(w http.ResponseWriter, r *http.Request) {
-    jsonToPrint, _ := json.Marshal("{\"time\":" + strconv.FormatInt(time.Now().UnixNano(), 10) + ",\"count\":" + strconv.Itoa(checkIP(r.RemoteAddr)) + "}")
-    fmt.Println(string(jsonToPrint))
-    fmt.Fprintf(w, string(jsonToPrint))
+    w.Header().Set("Access-Control-Allow-Origin", "*")
+    fmt.Fprintf(w, "{\"time\":" + strconv.FormatInt(time.Now().UnixNano(), 10) + ",\"count\":" + strconv.Itoa(checkIP(r.RemoteAddr)) + "}")
 }
 
 func main() {
