@@ -35,12 +35,13 @@ function getStartTime(){
 	}
 
 	time_delay = time_delay / 3;
-	Request();
+	Request(); // Why do we need this request again?
 
 	video_time = (video_time + time_delay) % 10; 
 
 };
 
+// Returns delay time from server
 
 function Request(){
 
@@ -53,6 +54,17 @@ function Request(){
 	user_count = json.count;
 
 	return delay;
+
+};
+
+
+// Sets the play time for the video
+
+function setPlayTime(){
+
+	var vid = document.getElementById("gbvideo");
+	vid.pause();
+	vid.currentTime = video_time; 
 
 };
 
@@ -85,14 +97,7 @@ function getSeconds(){
 };
 
 
-// Sets the play time for the video
 
-function setPlayTime(){
-
-	var vid = document.getElementById("gbvideo");
-	vid.currentTime = video_time; 
-
-};
 
 // TODO
          
