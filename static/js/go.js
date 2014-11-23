@@ -17,7 +17,7 @@ function main(){
 	//while(true){ 
 	getStartTime();
 	setPlayTime();
-	displayUserCount();
+	//displayUserCount();
 	//setTimeout(30000); // Calls back in 30 seconds
 	//}
 
@@ -62,10 +62,9 @@ function Request(){
 
 function setPlayTime(){
 
-	var vid = document.getElementById("gbvideo");
-	vid.play();
-	vid.currentTime = video_time;
-	//vid.currentTime = video_time; 
+	document.getElementById('gbvideo').addEventListener('loadedmetadata', function() {
+  	this.currentTime = video_time;
+	}, false);
 };
 
 // Returns JSON data (timestamp and usercount) from server
