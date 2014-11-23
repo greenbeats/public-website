@@ -63,7 +63,11 @@ function Request(){
 function setPlayTime(){
 
 	var vid = document.getElementById("gbvideo");
-	vid.currentTime = video_time; 
+	vid.play();
+	vid.addEventListener("canplay",function(){
+		 vid.currentTime = video_time;
+		 });
+	//vid.currentTime = video_time; 
 	console.log(video_time);
 	console.log(user_count);
 };
@@ -131,7 +135,7 @@ function displayUserCount(){
 
 	json = getHttp();
 	user_count = json.count;
-	document.getElementById("userCount").innerHTML = "Now " + user_count -1 + " users breathing with you";
+	document.getElementById("userCount").innerHTML = "Currently " + user_count + " users breathing";
 
 };
 
