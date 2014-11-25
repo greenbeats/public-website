@@ -1,8 +1,13 @@
 # Green Beats Website
 
-## Last fixes
+## Front 
+* HTML5/CSS/JS
+* Twitter Bootstrap
+* Font Awesome
+
+## Back
+* JavaScript 
+
+## To fix
 * Subscribe form
 * Contact form
-
-## If time allows...
-* Some js files not working properly
