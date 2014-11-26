@@ -6,8 +6,9 @@
 * Font Awesome
 
 ## Back
-* JavaScript 
+* Golang server
+* MongoDB database 
 
-## To fix
-* Subscribe form
+## To fix in the future
+* Mailchimp integration
 * Contact form
